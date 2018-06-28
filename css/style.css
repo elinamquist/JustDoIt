@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+    font-family:AVENGEANCE MIGHTIEST AVENGER;
+    src: url(fonts/AVENGEANCE MIGHTIEST AVENGER.otf);
+}
+body {
+  margin: 0;
+  font-weight: lighter;
+  font-family: 'Avengeance Mightiest Avenger';
+  background-color:#ffc031;
+  padding: 0;
+
+}
+section {
+  
+  width: 90%;
+  margin:auto;
+  text-align: center;
+}
+#brand {
+  font-size: 6em;
+  padding: 0px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: red;
+}
+.modal-content p {
+  color: red;
+}
+.modal-close {
+  color: green;
+  float: right;
+  font-size: 3.0em;
+  font-weight: bold;
+}
+.modal-close {
+  cursor: pointer;
+}
+
+ li {
+  list-style: none;
+  font-size: 1.2em;
+  background-color: #fe4b74;
+  margin-top:10px!important;
+  padding: 10px;
+  border-radius: 5px;
+  width: 35%;
+  margin: auto;
+  text-align: left;
+  color: #fff;
+}
+li:nth-of-type(2n) {
+  background-color: #add;
+}
+.checked {
+  text-decoration: line-through;
+  background-color: green!important;
+  color: #fff;
+}
+
+.delete-item {
+  float: right;
+  font-size: 1.5em;
+  padding-right: 10px;
+}
+.delete-item:hover {
+  cursor: pointer;
+  font-size: 1.6em;
+  color:#000;
+}
+
+#item_input {
+  height: 50px;
+  width: 40%;
+  border-radius: 3px;
+  border: #fff;
+  font-size: 1.1em;
+  padding: 10px;
+
+}
+#add_btn {
+   height: 50px;
+  border-radius: 3px;
+  border: #fff;
+  font-size: 1.1em;
+  padding: 10px;
+background-color: #000;
+color: #fff;
+transition: all 0.5s ease-in-out;
+}
+
+#add_btn:hover {
+background-color: #fff;
+color: #000;
+}
+p {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #000;
+  opacity: 0.6;
+}
+
+a {
+  font-weight: 700;
+  color: #373B44;
+  position: relative;
+}
+a:hover {
+  opacity: 0.8;
+}
+a:active {
+  top: 1px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768.44px){
+  section {
+  
+  width: 95%;
+  margin:auto;
+  text-align: center;
+}
+  #brand {
+  font-size: 3em;
+  padding: 0px;
+}
+#item_input {
+  height: 40px;
+  width: 100%;
+  border-radius: 3px;
+  border: #fff;
+  font-size: 1.1em;
+  padding: 10px;
+
+}
+#add_btn {
+   height: 30px;
+  border-radius: 3px;
+  border: #fff;
+  font-size: 1em;
+  padding: 15px;
+  padding-bottom: 30px;
+  margin:10px;
+}
+li {
+  list-style: none;
+  font-size: 1.2em;
+  background-color: #fe4b74;
+  margin-top:10px!important;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-left: -25px;
+  text-align: left;
+  color: #fff;
+}
+}
